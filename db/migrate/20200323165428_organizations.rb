@@ -1,7 +1,8 @@
 class Organizations < ActiveRecord::Migration[5.2]
   def change
     create_table :organizations do |t|
-      t.string :opportunity
+      t.string :title
+      t.string :position
       t.string :requirements
       t.text :content
       t.string :summary
